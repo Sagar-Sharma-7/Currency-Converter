@@ -40,7 +40,7 @@ const convert = async () => {
 
     } catch (error) {
         console.log(error);
-        mainHeading.textContent = "Please your internet connection...";
+        mainHeading.textContent = "Please check your internet connection...";
     }
 }
 
