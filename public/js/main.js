@@ -7,6 +7,7 @@ const options = document.querySelectorAll("option");
 const conBtn = document.querySelector("#convertBtn");
 const conUnit = document.querySelector("#resultField");
 const conCurr = document.querySelector(".convertCurr");
+const lastUpdated = document.querySelector(".lastUpdated");
 
 // text content
 title.textContent = "Currency Converter";
@@ -37,6 +38,8 @@ const convert = async () => {
 
              const result = (currUnit.value * value).toFixed(5);
              conUnit.value = result;
+             lastUpdated.innerHTML = `Last Updated: ${jsonData.date}`;
+
 
     } catch (error) {
         console.log(error);
